@@ -34,6 +34,28 @@ namespace BusinessLayer
             }
         }
 
+        public bool UpdateProduct(Proizvod p)
+        {
+            if (this.proizvodRepository.UpdateProduct(p) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
+        public bool DeleteProduct(Proizvod p)
+        {
+            if (this.proizvodRepository.DeleteProduct(p) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
