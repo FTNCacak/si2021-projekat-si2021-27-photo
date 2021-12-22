@@ -43,7 +43,7 @@ namespace PresentationLayer
 
             if (this.proizvodBusiness.InsertProduct(p))
             {
-                Refresh();
+                RefreshData();
                 MessageBox.Show("Uspesno ste uneli podatke! ", MessageBoxIcon.Information.ToString());
                 textBox_Naziv.Clear();
                 textBox_Marka.Clear();
@@ -56,7 +56,7 @@ namespace PresentationLayer
             }
         }
 
-        int ID; //globalna promenljiva za cianje id-a svakog reda
+        int ID; //globalna promenljiva za citanje id-a svakog reda
         private void dataGridView_Proizvod_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             ID = Convert.ToInt32(dataGridView_Proizvod.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -78,7 +78,7 @@ namespace PresentationLayer
 
             if (this.proizvodBusiness.UpdateProduct(p))
             {
-                Refresh();
+                RefreshData();
                 MessageBox.Show("Uspesno ste izmenili podatke! ", MessageBoxIcon.Information.ToString());
                 textBox_Naziv.Clear();
                 textBox_Marka.Clear();
@@ -90,5 +90,32 @@ namespace PresentationLayer
                 MessageBox.Show("Neuspesna izmena podataka!", MessageBoxIcon.Error.ToString());
             }
         }
+
+        private void button_Obrisi_Click(object sender, EventArgs e)
+        {
+            Proizvod p = new Proizvod();
+            p.naziv = textBox_Naziv.Text;
+            p.marka = textBox_Marka.Text;
+            p.cena = Convert.ToDecimal(textBox_Cena.Text);
+            p.garancija = Convert.ToInt32(textBox_Garancija.Text);
+
+            p.sifra_proizvoda = ID;
+
+            if (this.proizvodBusiness.DeleteProduct(p))
+            {
+                RefreshData();
+                MessageBox.Show("Uspesno ste obrisali podatak! ", MessageBoxIcon.Information.ToString());
+                textBox_Naziv.Clear();
+                textBox_Marka.Clear();
+                textBox_Cena.Clear();
+                textBox_Garancija.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Niste obrisali podatak!", MessageBoxIcon.Error.ToString());
+            }
+        }
+
+       
     }
 }

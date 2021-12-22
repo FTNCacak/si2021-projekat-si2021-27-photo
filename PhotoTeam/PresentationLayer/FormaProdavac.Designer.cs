@@ -29,7 +29,6 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView_Proizvod = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,18 +41,9 @@ namespace PresentationLayer
             this.button_Obrisi = new System.Windows.Forms.Button();
             this.button_Izmeni = new System.Windows.Forms.Button();
             this.button_Dodaj = new System.Windows.Forms.Button();
+            this.dataGridView_Proizvod = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Proizvod)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView_Proizvod
-            // 
-            this.dataGridView_Proizvod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Proizvod.Location = new System.Drawing.Point(54, 49);
-            this.dataGridView_Proizvod.Name = "dataGridView_Proizvod";
-            this.dataGridView_Proizvod.RowHeadersWidth = 51;
-            this.dataGridView_Proizvod.RowTemplate.Height = 24;
-            this.dataGridView_Proizvod.Size = new System.Drawing.Size(552, 235);
-            this.dataGridView_Proizvod.TabIndex = 0;
             // 
             // label1
             // 
@@ -130,18 +120,19 @@ namespace PresentationLayer
             // 
             // button_Obrisi
             // 
-            this.button_Obrisi.Location = new System.Drawing.Point(256, 323);
+            this.button_Obrisi.Location = new System.Drawing.Point(256, 313);
             this.button_Obrisi.Name = "button_Obrisi";
-            this.button_Obrisi.Size = new System.Drawing.Size(75, 23);
+            this.button_Obrisi.Size = new System.Drawing.Size(97, 45);
             this.button_Obrisi.TabIndex = 10;
             this.button_Obrisi.Text = "Obriši";
             this.button_Obrisi.UseVisualStyleBackColor = true;
+            this.button_Obrisi.Click += new System.EventHandler(this.button_Obrisi_Click);
             // 
             // button_Izmeni
             // 
-            this.button_Izmeni.Location = new System.Drawing.Point(679, 323);
+            this.button_Izmeni.Location = new System.Drawing.Point(657, 313);
             this.button_Izmeni.Name = "button_Izmeni";
-            this.button_Izmeni.Size = new System.Drawing.Size(75, 23);
+            this.button_Izmeni.Size = new System.Drawing.Size(97, 45);
             this.button_Izmeni.TabIndex = 11;
             this.button_Izmeni.Text = "Izmeni";
             this.button_Izmeni.UseVisualStyleBackColor = true;
@@ -149,19 +140,31 @@ namespace PresentationLayer
             // 
             // button_Dodaj
             // 
-            this.button_Dodaj.Location = new System.Drawing.Point(809, 323);
+            this.button_Dodaj.Location = new System.Drawing.Point(809, 313);
             this.button_Dodaj.Name = "button_Dodaj";
-            this.button_Dodaj.Size = new System.Drawing.Size(75, 23);
+            this.button_Dodaj.Size = new System.Drawing.Size(106, 45);
             this.button_Dodaj.TabIndex = 12;
             this.button_Dodaj.Text = "Dodaj";
             this.button_Dodaj.UseVisualStyleBackColor = true;
             this.button_Dodaj.Click += new System.EventHandler(this.button_Dodaj_Click);
+            // 
+            // dataGridView_Proizvod
+            // 
+            this.dataGridView_Proizvod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Proizvod.Location = new System.Drawing.Point(22, 48);
+            this.dataGridView_Proizvod.Name = "dataGridView_Proizvod";
+            this.dataGridView_Proizvod.RowHeadersWidth = 51;
+            this.dataGridView_Proizvod.RowTemplate.Height = 24;
+            this.dataGridView_Proizvod.Size = new System.Drawing.Size(604, 223);
+            this.dataGridView_Proizvod.TabIndex = 13;
+            this.dataGridView_Proizvod.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Proizvod_CellContentClick);
             // 
             // FormaProdavac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1017, 491);
+            this.Controls.Add(this.dataGridView_Proizvod);
             this.Controls.Add(this.button_Dodaj);
             this.Controls.Add(this.button_Izmeni);
             this.Controls.Add(this.button_Obrisi);
@@ -174,7 +177,6 @@ namespace PresentationLayer
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView_Proizvod);
             this.Name = "FormaProdavac";
             this.Text = "Proizvodi";
             this.Load += new System.EventHandler(this.FormaProdavac_Load);
@@ -185,8 +187,6 @@ namespace PresentationLayer
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView_Proizvod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -199,6 +199,7 @@ namespace PresentationLayer
         private System.Windows.Forms.Button button_Obrisi;
         private System.Windows.Forms.Button button_Izmeni;
         private System.Windows.Forms.Button button_Dodaj;
+        private System.Windows.Forms.DataGridView dataGridView_Proizvod;
     }
 }
 
