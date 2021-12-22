@@ -145,6 +145,7 @@ namespace PresentationLayer
             this.button_Izmeni.TabIndex = 11;
             this.button_Izmeni.Text = "Izmeni";
             this.button_Izmeni.UseVisualStyleBackColor = true;
+            this.button_Izmeni.Click += new System.EventHandler(this.button_Izmeni_Click);
             // 
             // button_Dodaj
             // 
@@ -154,6 +155,7 @@ namespace PresentationLayer
             this.button_Dodaj.TabIndex = 12;
             this.button_Dodaj.Text = "Dodaj";
             this.button_Dodaj.UseVisualStyleBackColor = true;
+            this.button_Dodaj.Click += new System.EventHandler(this.button_Dodaj_Click);
             // 
             // FormaProdavac
             // 
