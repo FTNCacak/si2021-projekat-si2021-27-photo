@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Interfaces\IProizvodRepository.cs" />
     <Compile Include="Models\Kupac.cs" />
     <Compile Include="Models\Porucivanje.cs" />
     <Compile Include="Models\Proizvod.cs" />
