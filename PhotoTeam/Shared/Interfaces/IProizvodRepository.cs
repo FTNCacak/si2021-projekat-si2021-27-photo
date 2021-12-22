@@ -10,8 +10,8 @@ namespace Shared.Interfaces
     public interface IProizvodRepository
     {
         List<Proizvod> GetAllProducts();
-        bool InsertProduct(Proizvod p);
-        bool UpdateProduct(Proizvod p);
-        bool DeleteProduct(Proizvod p);
+        int InsertProduct(Proizvod p);
+        int UpdateProduct(Proizvod p);
+        int DeleteProduct(Proizvod p);
     }
 }

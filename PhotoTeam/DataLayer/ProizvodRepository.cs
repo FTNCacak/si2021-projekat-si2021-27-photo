@@ -39,5 +39,54 @@ namespace DataLayer
             }
             return listaProizvoda;
         }
+        public int InsertProduct(Proizvod p)
+        {
+
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                sqlConnection.Open();
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("INSERT INTO PROIZVODI " +
+                    "VALUES('{0}','{1}',{2}, {3})", p.naziv, p.marka, p.cena, p.garancija);
+
+                return command.ExecuteNonQuery();
+
+            }
+
+        }
+        public int UpdateProduct(Proizvod p)
+        {
+
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                sqlConnection.Open();
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("UPDATE PROIZVODI SET naziv='{0}', marka='{1}', cena={2},garancija={3}" +
+                    "WHERE sifra_proizvoda={4}", p.naziv, p.marka, p.cena, p.garancija, p.sifra_proizvoda);
+
+                return command.ExecuteNonQuery();
+
+            }
+
+        }
+        public int DeleteProduct(Proizvod p)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                {
+                    sqlConnection.Open();
+
+                    SqlCommand command = new SqlCommand();
+                    command.Connection = sqlConnection;
+                    command.CommandText = string.Format("DELETE FROM PROIZVODI WHERE sifra_proizvoda = {0}", p.sifra_proizvoda);
+
+                    return command.ExecuteNonQuery();
+                }
+            }
+
+
+        }
     }
 }
