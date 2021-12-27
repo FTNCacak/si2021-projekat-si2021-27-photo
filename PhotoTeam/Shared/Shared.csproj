@@ -44,6 +44,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Interfaces\IProizvodBusiness.cs" />
     <Compile Include="Interfaces\IProizvodRepository.cs" />
+    <Compile Include="Interfaces\IZaposlenRepository.cs" />
     <Compile Include="Models\Kupac.cs" />
     <Compile Include="Models\Porucivanje.cs" />
     <Compile Include="Models\Proizvod.cs" />
