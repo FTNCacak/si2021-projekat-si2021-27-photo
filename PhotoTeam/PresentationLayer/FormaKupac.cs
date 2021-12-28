@@ -35,10 +35,8 @@ namespace PresentationLayer
 
         private void button_Kupovina_Click(object sender, EventArgs e)
         {
-            var process = new Process();
-            process.StartInfo.FileName = "Firefox";
-            process.StartInfo.Arguments = @"https://localhost:44395/";
-            Process.Start("https://localhost:44395/");
+            string URL = "https://localhost:44395/";
+            System.Diagnostics.Process.Start(URL);
         }
 
         private void button_Izadji_Click(object sender, EventArgs e)

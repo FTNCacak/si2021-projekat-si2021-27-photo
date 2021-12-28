@@ -15,9 +15,11 @@ namespace PresentationLayer
     public partial class FormaProdavac : Form
     {
         private readonly ProizvodBusiness proizvodBusiness;
+        private readonly PorucivanjeBusiness porucivanjeBusiness;
         public FormaProdavac()
         {
             this.proizvodBusiness = new ProizvodBusiness();
+            this.porucivanjeBusiness = new PorucivanjeBusiness();
             InitializeComponent();
         }
 
@@ -30,7 +32,7 @@ namespace PresentationLayer
         {
             List<Proizvod> listaProizvoda = this.proizvodBusiness.GetAllProducts();
             dataGridView_Proizvod.DataSource = listaProizvoda;
-            dataGridView_Proizvod.Columns["sifra_proizvoda"].Visible = false;
+          
         }
 
         private void button_Dodaj_Click(object sender, EventArgs e)
@@ -116,6 +118,11 @@ namespace PresentationLayer
             }
         }
 
-       
+        private void button_Osvezi_Click(object sender, EventArgs e)
+        {
+            List<Porucivanje> listaPorucenihProizvoda = this.porucivanjeBusiness.GetAllOrders();
+            dataGridView_PoruceniProizvodi.DataSource = listaPorucenihProizvoda;
+            dataGridView_PoruceniProizvodi.Columns["id_porucivanja"].Visible = false;
+        }
     }
 }

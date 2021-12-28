@@ -42,13 +42,17 @@ namespace PresentationLayer
             this.button_Izmeni = new System.Windows.Forms.Button();
             this.button_Dodaj = new System.Windows.Forms.Button();
             this.dataGridView_Proizvod = new System.Windows.Forms.DataGridView();
+            this.dataGridView_PoruceniProizvodi = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button_Osvezi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Proizvod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PoruceniProizvodi)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(635, 52);
+            this.label1.Location = new System.Drawing.Point(35, 291);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 17);
             this.label1.TabIndex = 1;
@@ -57,7 +61,7 @@ namespace PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(635, 84);
+            this.label2.Location = new System.Drawing.Point(35, 323);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 17);
             this.label2.TabIndex = 2;
@@ -66,7 +70,7 @@ namespace PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(635, 126);
+            this.label3.Location = new System.Drawing.Point(35, 365);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 17);
             this.label3.TabIndex = 3;
@@ -75,7 +79,7 @@ namespace PresentationLayer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(635, 157);
+            this.label4.Location = new System.Drawing.Point(35, 396);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 4;
@@ -83,28 +87,28 @@ namespace PresentationLayer
             // 
             // textBox_Naziv
             // 
-            this.textBox_Naziv.Location = new System.Drawing.Point(745, 49);
+            this.textBox_Naziv.Location = new System.Drawing.Point(145, 288);
             this.textBox_Naziv.Name = "textBox_Naziv";
             this.textBox_Naziv.Size = new System.Drawing.Size(181, 22);
             this.textBox_Naziv.TabIndex = 5;
             // 
             // textBox_Marka
             // 
-            this.textBox_Marka.Location = new System.Drawing.Point(745, 84);
+            this.textBox_Marka.Location = new System.Drawing.Point(145, 323);
             this.textBox_Marka.Name = "textBox_Marka";
             this.textBox_Marka.Size = new System.Drawing.Size(181, 22);
             this.textBox_Marka.TabIndex = 6;
             // 
             // textBox_Cena
             // 
-            this.textBox_Cena.Location = new System.Drawing.Point(745, 121);
+            this.textBox_Cena.Location = new System.Drawing.Point(145, 360);
             this.textBox_Cena.Name = "textBox_Cena";
             this.textBox_Cena.Size = new System.Drawing.Size(181, 22);
             this.textBox_Cena.TabIndex = 7;
             // 
             // textBox_Garancija
             // 
-            this.textBox_Garancija.Location = new System.Drawing.Point(745, 157);
+            this.textBox_Garancija.Location = new System.Drawing.Point(145, 396);
             this.textBox_Garancija.Name = "textBox_Garancija";
             this.textBox_Garancija.Size = new System.Drawing.Size(181, 22);
             this.textBox_Garancija.TabIndex = 8;
@@ -120,7 +124,7 @@ namespace PresentationLayer
             // 
             // button_Obrisi
             // 
-            this.button_Obrisi.Location = new System.Drawing.Point(256, 313);
+            this.button_Obrisi.Location = new System.Drawing.Point(54, 465);
             this.button_Obrisi.Name = "button_Obrisi";
             this.button_Obrisi.Size = new System.Drawing.Size(97, 45);
             this.button_Obrisi.TabIndex = 10;
@@ -130,7 +134,7 @@ namespace PresentationLayer
             // 
             // button_Izmeni
             // 
-            this.button_Izmeni.Location = new System.Drawing.Point(657, 313);
+            this.button_Izmeni.Location = new System.Drawing.Point(157, 465);
             this.button_Izmeni.Name = "button_Izmeni";
             this.button_Izmeni.Size = new System.Drawing.Size(97, 45);
             this.button_Izmeni.TabIndex = 11;
@@ -140,7 +144,7 @@ namespace PresentationLayer
             // 
             // button_Dodaj
             // 
-            this.button_Dodaj.Location = new System.Drawing.Point(809, 313);
+            this.button_Dodaj.Location = new System.Drawing.Point(260, 465);
             this.button_Dodaj.Name = "button_Dodaj";
             this.button_Dodaj.Size = new System.Drawing.Size(106, 45);
             this.button_Dodaj.TabIndex = 12;
@@ -155,15 +159,47 @@ namespace PresentationLayer
             this.dataGridView_Proizvod.Name = "dataGridView_Proizvod";
             this.dataGridView_Proizvod.RowHeadersWidth = 51;
             this.dataGridView_Proizvod.RowTemplate.Height = 24;
-            this.dataGridView_Proizvod.Size = new System.Drawing.Size(604, 223);
+            this.dataGridView_Proizvod.Size = new System.Drawing.Size(690, 223);
             this.dataGridView_Proizvod.TabIndex = 13;
             this.dataGridView_Proizvod.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Proizvod_CellContentClick);
+            // 
+            // dataGridView_PoruceniProizvodi
+            // 
+            this.dataGridView_PoruceniProizvodi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_PoruceniProizvodi.Location = new System.Drawing.Point(741, 48);
+            this.dataGridView_PoruceniProizvodi.Name = "dataGridView_PoruceniProizvodi";
+            this.dataGridView_PoruceniProizvodi.RowHeadersWidth = 51;
+            this.dataGridView_PoruceniProizvodi.RowTemplate.Height = 24;
+            this.dataGridView_PoruceniProizvodi.Size = new System.Drawing.Size(273, 223);
+            this.dataGridView_PoruceniProizvodi.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(790, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Lista poručenih proizvoda";
+            // 
+            // button_Osvezi
+            // 
+            this.button_Osvezi.Location = new System.Drawing.Point(806, 291);
+            this.button_Osvezi.Name = "button_Osvezi";
+            this.button_Osvezi.Size = new System.Drawing.Size(144, 50);
+            this.button_Osvezi.TabIndex = 16;
+            this.button_Osvezi.Text = "Osveži";
+            this.button_Osvezi.UseVisualStyleBackColor = true;
+            this.button_Osvezi.Click += new System.EventHandler(this.button_Osvezi_Click);
             // 
             // FormaProdavac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 491);
+            this.ClientSize = new System.Drawing.Size(1044, 542);
+            this.Controls.Add(this.button_Osvezi);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dataGridView_PoruceniProizvodi);
             this.Controls.Add(this.dataGridView_Proizvod);
             this.Controls.Add(this.button_Dodaj);
             this.Controls.Add(this.button_Izmeni);
@@ -181,6 +217,7 @@ namespace PresentationLayer
             this.Text = "Proizvodi";
             this.Load += new System.EventHandler(this.FormaProdavac_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Proizvod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PoruceniProizvodi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +237,9 @@ namespace PresentationLayer
         private System.Windows.Forms.Button button_Izmeni;
         private System.Windows.Forms.Button button_Dodaj;
         private System.Windows.Forms.DataGridView dataGridView_Proizvod;
+        private System.Windows.Forms.DataGridView dataGridView_PoruceniProizvodi;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button_Osvezi;
     }
 }
 
