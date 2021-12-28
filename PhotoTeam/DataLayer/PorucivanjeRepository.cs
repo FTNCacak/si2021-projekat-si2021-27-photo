@@ -10,36 +10,36 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class KupacRepository:IKupacRepository
+    public class PorucivanjeRepository: IPorucivanjeRepository
     {
-        public List<Proizvod> GetAllProducts()
+        public List<Porucivanje> GetAllOrders()
         {
-            List<Proizvod> listaProizvoda = new List<Proizvod>();
+            List<Porucivanje> listaPorucenihProizvoda = new List<Porucivanje>();
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
             {
                 sqlConnection.Open();
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = "SELECT * FROM PROIZVODI";
+                command.CommandText = "SELECT * FROM PORUCIVANJA";
 
                 SqlDataReader dataReader = command.ExecuteReader();
 
                 while (dataReader.Read())
                 {
-                    Proizvod p = new Proizvod();
-                    p.sifra_proizvoda = dataReader.GetInt32(0);
-                    p.naziv = dataReader.GetString(1);
-                    p.marka = dataReader.GetString(2);
-                    p.cena = dataReader.GetDecimal(3);
-                    p.garancija = dataReader.GetInt32(4);
+                    Porucivanje p = new Porucivanje();
+                    p.id_porucivanja = dataReader.GetInt32(0);
+                    p.naziv_proizvoda = dataReader.GetString(1);
+                    p.sifraP = dataReader.GetInt32(2);
+                    
 
-                    listaProizvoda.Add(p);
+                    listaPorucenihProizvoda.Add(p);
                 }
 
             }
-            return listaProizvoda;
+            return listaPorucenihProizvoda;
         }
-        public int InsertCustomer(Kupac k)
+
+        public int InsertOrder(Porucivanje p)
         {
 
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
@@ -47,8 +47,8 @@ namespace DataLayer
                 sqlConnection.Open();
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = string.Format("INSERT INTO KUPCI " +
-                    "VALUES('{0}','{1}','{2}', {3},'{4}')", k.ime, k.prezime, k.email, k.adresa, k.broj_telefona);
+                command.CommandText = string.Format("INSERT INTO PORUCIVANJA " +
+                    "VALUES('{0}',{1})",p.naziv_proizvoda,p.sifraP);
 
                 return command.ExecuteNonQuery();
 
@@ -56,6 +56,4 @@ namespace DataLayer
 
         }
     }
-
-   
 }

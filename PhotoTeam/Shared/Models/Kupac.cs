@@ -10,6 +10,7 @@ namespace Shared.Models
     {
         public int id_kupca { get; set; }
         public string ime { get; set; }
+        public string prezime { get; set; }
         public string email { get; set; }
         public string adresa { get; set; }
         public string broj_telefona { get; set; }

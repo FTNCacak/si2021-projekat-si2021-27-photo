@@ -10,6 +10,6 @@ namespace Shared.Models
     {
         public int id_porucivanja { get; set; }
         public string naziv_proizvoda { get; set; }
-        public string datum_porucivanja { get; set; }
+        public int sifraP { get; set; }
     }
 }
