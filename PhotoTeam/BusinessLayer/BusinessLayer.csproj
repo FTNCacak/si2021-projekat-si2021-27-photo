@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KupacBusiness.cs" />
+    <Compile Include="PorucivanjeBusiness.cs" />
     <Compile Include="ProizvodBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZaposlenBusiness.cs" />

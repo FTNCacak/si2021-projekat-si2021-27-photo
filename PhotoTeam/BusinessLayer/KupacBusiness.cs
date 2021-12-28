@@ -21,5 +21,17 @@ namespace BusinessLayer
         {
             return this.kupacRepository.GetAllProducts();
         }
+
+        public bool InsertCustomer(Kupac k)
+        {
+            if (this.kupacRepository.InsertCustomer(k) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

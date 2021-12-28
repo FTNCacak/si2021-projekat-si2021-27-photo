@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Shared.Interfaces
 {
-    public interface IKupacBusiness
+    public interface IPorucivanjeBusiness
     {
-        List<Proizvod> GetAllProducts();
+        List<Porucivanje> GetAllOrders();
 
-        bool InsertCustomer(Kupac k);
+        bool InsertOrder(Porucivanje p);
     }
 }
