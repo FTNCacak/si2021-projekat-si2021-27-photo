@@ -12,10 +12,15 @@ namespace WebApplicationPhoto
     public partial class WebKupac : System.Web.UI.Page
     {
         private readonly ProizvodBusiness proizvodBusiness;
+        private readonly KupacBusiness kupacBusiness;
+        private readonly PorucivanjeBusiness porucivanjeBusiness;
+
 
         public WebKupac()
         {
             this.proizvodBusiness = new ProizvodBusiness();
+            this.kupacBusiness = new KupacBusiness();
+            this.porucivanjeBusiness = new PorucivanjeBusiness();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -45,7 +50,7 @@ namespace WebApplicationPhoto
             {
                 if (p.sifra_proizvoda.ToString()==TextBoxSifraProizvoda.Text)
                 {
-                    ListBox_Korpa.Items.Add(p.sifra_proizvoda+" - "+p.naziv);
+                    ListBox_Korpa.Items.Add(p.sifra_proizvoda+"-"+p.naziv+"|");
                     tacno = true;
                 }
                    
@@ -60,6 +65,44 @@ namespace WebApplicationPhoto
         protected void Button_Ocisti_Click(object sender, EventArgs e)
         {
             ListBox_Korpa.Items.Clear();
+        }
+
+        protected void Button_Poruci_Click(object sender, EventArgs e)
+        {
+            Kupac k = new Kupac();
+            k.ime = TextBox_Ime.Text;
+            k.prezime = TextBox_Prezime.Text;
+            k.email = TextBox_Email.Text;
+            k.broj_telefona = TextBox_BrTelefona.Text;
+
+
+            // kada se poruce proizvodi, upisujemo podatke u tabelu PORUCIVANJA
+
+            Porucivanje p = new Porucivanje();
+
+            p.sifraP = Convert.ToInt32(TextBoxSifraProizvoda.Text);
+            foreach(Proizvod pr in proizvodBusiness.GetAllProducts())
+            {
+                if(pr.sifra_proizvoda==p.sifraP)
+                {
+                    p.naziv_proizvoda = pr.naziv;
+                }
+            }
+
+
+            if (this.kupacBusiness.InsertCustomer(k) && this.porucivanjeBusiness.InsertOrder(p))
+            {
+                string poruka = "Uspešno ste poručili proizvod!";
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + poruka + "');", true);
+            }
+            else
+            {
+                string porukaNeuspeh = "Nespešno poručivanje! Pokušajte ponovo!";
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + porukaNeuspeh + "');", true);
+            }
+
+
+
         }
     }
 }

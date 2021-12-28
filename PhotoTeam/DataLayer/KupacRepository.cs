@@ -48,7 +48,7 @@ namespace DataLayer
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
                 command.CommandText = string.Format("INSERT INTO KUPCI " +
-                    "VALUES('{0}','{1}','{2}', {3},'{4}')", k.ime, k.prezime, k.email, k.adresa, k.broj_telefona);
+                    "VALUES('{0}','{1}','{2}', '{3}','{4}')", k.ime, k.prezime, k.email, k.adresa, k.broj_telefona);
 
                 return command.ExecuteNonQuery();
 

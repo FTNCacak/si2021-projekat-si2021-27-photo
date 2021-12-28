@@ -33,7 +33,7 @@
                     <asp:Label ID="Label7" runat="server" Text="Broj telefona"></asp:Label><asp:TextBox ID="TextBox_BrTelefona" runat="server" style="margin-left:3px"></asp:TextBox><br />  <br />   
                      <br />
                  
-                    <asp:Button ID="Button_Poruci" runat="server" Text="Poruči" style="width:150px;margin-left:60px"/>
+                    <asp:Button ID="Button_Poruci" runat="server" Text="Poruči" style="width:150px;margin-left:60px" OnClick="Button_Poruci_Click"/>
                 </div>
 
         </div>
