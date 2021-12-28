@@ -42,24 +42,6 @@ namespace WebApplicationPhoto
         protected global::System.Web.UI.WebControls.TextBox TextBoxSifraProizvoda;
 
         /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-
-        /// <summary>
-        /// TextBoxNazivProizvoda control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxNazivProizvoda;
-
-        /// <summary>
         /// ButtonDodaj control.
         /// </summary>
         /// <remarks>
@@ -76,6 +58,15 @@ namespace WebApplicationPhoto
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox ListBox_Korpa;
+
+        /// <summary>
+        /// Button_Ocisti control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Ocisti;
 
         /// <summary>
         /// Label3 control.

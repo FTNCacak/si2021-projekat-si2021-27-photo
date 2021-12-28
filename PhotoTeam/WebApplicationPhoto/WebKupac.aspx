@@ -8,7 +8,7 @@
         <div class="container bg-primary" style="padding:50px;color:black">
             <div class="row">
                 <div class="col-md-6">
-                    <asp:ListBox ID="ListBoxProizvodiWeb" runat="server" Height="189px" Width="424px"></asp:ListBox>
+                    <asp:ListBox ID="ListBoxProizvodiWeb" runat="server" Height="189px" Width="424px" OnSelectedIndexChanged="ListBoxProizvodiWeb_SelectedIndexChanged"></asp:ListBox>
                         <br/>
         
 
@@ -16,15 +16,16 @@
                     <br />
                     <br />
                     <asp:Label ID="Label1" runat="server" Text="Sifra"></asp:Label>  <asp:TextBox ID="TextBoxSifraProizvoda" runat="server"></asp:TextBox><br /><br />
-                    <asp:Label ID="Label2" runat="server" Text="Naziv"></asp:Label>  <asp:TextBox ID="TextBoxNazivProizvoda" runat="server"></asp:TextBox>
-                     <br />
-                    <br />  
-       <asp:Button ID="ButtonDodaj" runat="server" Text="Dodaj" style="width:150px;margin-left:40px"/>
+                   
+              
+       <asp:Button ID="ButtonDodaj" runat="server" Text="Dodaj u korpu" style="width:150px;margin-left:40px" OnClick="ButtonDodaj_Click"/>
                 </div>
 
                 <div class="col-md-6">
                   
-                    <asp:ListBox ID="ListBox_Korpa" runat="server" Height="124px" Width="295px"></asp:ListBox><br /><br /><br />
+                    <asp:ListBox ID="ListBox_Korpa" runat="server" Height="124px" Width="295px"></asp:ListBox>
+                    <asp:Button ID="Button_Ocisti" runat="server" Text="Očisti korpu" OnClick="Button_Ocisti_Click" style="margin-left:10px;" />
+                    <br /><br /><br />
                     <asp:Label ID="Label3" runat="server" Text="Ime"></asp:Label>          <asp:TextBox ID="TextBox_Ime" runat="server" style="margin-left:53px"></asp:TextBox>   <br />   <br />  
                     <asp:Label ID="Label4" runat="server" Text="Prezime"></asp:Label>      <asp:TextBox ID="TextBox_Prezime" runat="server" style="margin-left:24px"></asp:TextBox>  <br />   <br />  
                     <asp:Label ID="Label5" runat="server" Text="Email"></asp:Label>        <asp:TextBox ID="TextBox_Email" runat="server" style="margin-left:41px"></asp:TextBox><br />   <br />  
