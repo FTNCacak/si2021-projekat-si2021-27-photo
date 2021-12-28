@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormaKupac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaKupac.Designer.cs">
+      <DependentUpon>FormaKupac.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaProdavac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormaKupac.resx">
+      <DependentUpon>FormaKupac.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaProdavac.resx">
       <DependentUpon>FormaProdavac.cs</DependentUpon>
     </EmbeddedResource>

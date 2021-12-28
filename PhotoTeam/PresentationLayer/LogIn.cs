@@ -47,5 +47,11 @@ namespace PresentationLayer
                 MessageBox.Show("Niste ispravno uneli podatke!");
             }
         }
+
+        private void button_Kupac_Click(object sender, EventArgs e)
+        {
+            FormaKupac forma = new FormaKupac();
+            forma.Show();
+        }
     }
 }

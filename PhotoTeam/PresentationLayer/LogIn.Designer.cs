@@ -89,6 +89,7 @@ namespace PresentationLayer
             this.button_Kupac.TabIndex = 6;
             this.button_Kupac.Text = "Nastavite kao kupac";
             this.button_Kupac.UseVisualStyleBackColor = true;
+            this.button_Kupac.Click += new System.EventHandler(this.button_Kupac_Click);
             // 
             // label2
             // 
