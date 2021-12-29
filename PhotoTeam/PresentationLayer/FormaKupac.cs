@@ -35,7 +35,7 @@ namespace PresentationLayer
 
         private void button_Kupovina_Click(object sender, EventArgs e)
         {
-            string URL = "https://localhost:44395/";
+            string URL = "https://localhost:44395/WebKupac/";
             System.Diagnostics.Process.Start(URL);
         }
 

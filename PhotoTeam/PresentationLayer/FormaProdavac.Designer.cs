@@ -50,119 +50,140 @@ namespace PresentationLayer
             this.pictureBoxMarka = new System.Windows.Forms.PictureBox();
             this.pictureBoxCena = new System.Windows.Forms.PictureBox();
             this.pictureBoxGarancija = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Proizvod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PoruceniProizvodi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaziv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMarka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGarancija)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 291);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(39, 288);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Naziv";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 323);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(39, 323);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Marka";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 365);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(39, 359);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 17);
+            this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Cena";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 396);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(39, 395);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 17);
+            this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Garancija";
             // 
             // textBox_Naziv
             // 
-            this.textBox_Naziv.Location = new System.Drawing.Point(145, 288);
+            this.textBox_Naziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Naziv.Location = new System.Drawing.Point(145, 286);
             this.textBox_Naziv.Name = "textBox_Naziv";
-            this.textBox_Naziv.Size = new System.Drawing.Size(181, 22);
+            this.textBox_Naziv.Size = new System.Drawing.Size(224, 27);
             this.textBox_Naziv.TabIndex = 5;
             // 
             // textBox_Marka
             // 
-            this.textBox_Marka.Location = new System.Drawing.Point(145, 323);
+            this.textBox_Marka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Marka.Location = new System.Drawing.Point(145, 322);
             this.textBox_Marka.Name = "textBox_Marka";
-            this.textBox_Marka.Size = new System.Drawing.Size(181, 22);
+            this.textBox_Marka.Size = new System.Drawing.Size(224, 27);
             this.textBox_Marka.TabIndex = 6;
             // 
             // textBox_Cena
             // 
-            this.textBox_Cena.Location = new System.Drawing.Point(145, 360);
+            this.textBox_Cena.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Cena.Location = new System.Drawing.Point(145, 358);
             this.textBox_Cena.Name = "textBox_Cena";
-            this.textBox_Cena.Size = new System.Drawing.Size(181, 22);
+            this.textBox_Cena.Size = new System.Drawing.Size(224, 27);
             this.textBox_Cena.TabIndex = 7;
             // 
             // textBox_Garancija
             // 
-            this.textBox_Garancija.Location = new System.Drawing.Point(145, 396);
+            this.textBox_Garancija.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Garancija.Location = new System.Drawing.Point(145, 393);
             this.textBox_Garancija.Name = "textBox_Garancija";
-            this.textBox_Garancija.Size = new System.Drawing.Size(181, 22);
+            this.textBox_Garancija.Size = new System.Drawing.Size(224, 27);
             this.textBox_Garancija.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(189, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 17);
+            this.label5.Size = new System.Drawing.Size(333, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Lista dostupnih proizvoda u prodavnici";
             // 
             // button_Obrisi
             // 
-            this.button_Obrisi.Location = new System.Drawing.Point(54, 465);
+            this.button_Obrisi.BackColor = System.Drawing.Color.Firebrick;
+            this.button_Obrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Obrisi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_Obrisi.Location = new System.Drawing.Point(465, 465);
             this.button_Obrisi.Name = "button_Obrisi";
-            this.button_Obrisi.Size = new System.Drawing.Size(97, 45);
+            this.button_Obrisi.Size = new System.Drawing.Size(203, 45);
             this.button_Obrisi.TabIndex = 10;
             this.button_Obrisi.Text = "Obriši";
-            this.button_Obrisi.UseVisualStyleBackColor = true;
+            this.button_Obrisi.UseVisualStyleBackColor = false;
             this.button_Obrisi.Click += new System.EventHandler(this.button_Obrisi_Click);
             // 
             // button_Izmeni
             // 
-            this.button_Izmeni.Location = new System.Drawing.Point(157, 465);
+            this.button_Izmeni.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button_Izmeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Izmeni.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_Izmeni.Location = new System.Drawing.Point(244, 465);
             this.button_Izmeni.Name = "button_Izmeni";
-            this.button_Izmeni.Size = new System.Drawing.Size(97, 45);
+            this.button_Izmeni.Size = new System.Drawing.Size(203, 45);
             this.button_Izmeni.TabIndex = 11;
             this.button_Izmeni.Text = "Izmeni";
-            this.button_Izmeni.UseVisualStyleBackColor = true;
+            this.button_Izmeni.UseVisualStyleBackColor = false;
             this.button_Izmeni.Click += new System.EventHandler(this.button_Izmeni_Click);
             // 
             // button_Dodaj
             // 
-            this.button_Dodaj.Location = new System.Drawing.Point(260, 465);
+            this.button_Dodaj.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button_Dodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Dodaj.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_Dodaj.Location = new System.Drawing.Point(22, 465);
             this.button_Dodaj.Name = "button_Dodaj";
-            this.button_Dodaj.Size = new System.Drawing.Size(106, 45);
+            this.button_Dodaj.Size = new System.Drawing.Size(203, 45);
             this.button_Dodaj.TabIndex = 12;
             this.button_Dodaj.Text = "Dodaj";
-            this.button_Dodaj.UseVisualStyleBackColor = true;
+            this.button_Dodaj.UseVisualStyleBackColor = false;
             this.button_Dodaj.Click += new System.EventHandler(this.button_Dodaj_Click);
             // 
             // dataGridView_Proizvod
             // 
+            this.dataGridView_Proizvod.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView_Proizvod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Proizvod.Location = new System.Drawing.Point(22, 48);
             this.dataGridView_Proizvod.Name = "dataGridView_Proizvod";
@@ -174,6 +195,7 @@ namespace PresentationLayer
             // 
             // dataGridView_PoruceniProizvodi
             // 
+            this.dataGridView_PoruceniProizvodi.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView_PoruceniProizvodi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_PoruceniProizvodi.Location = new System.Drawing.Point(741, 48);
             this.dataGridView_PoruceniProizvodi.Name = "dataGridView_PoruceniProizvodi";
@@ -185,26 +207,30 @@ namespace PresentationLayer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(790, 20);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(757, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 17);
+            this.label6.Size = new System.Drawing.Size(226, 20);
             this.label6.TabIndex = 15;
             this.label6.Text = "Lista poručenih proizvoda";
             // 
             // button_Osvezi
             // 
-            this.button_Osvezi.Location = new System.Drawing.Point(806, 291);
+            this.button_Osvezi.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button_Osvezi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Osvezi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_Osvezi.Location = new System.Drawing.Point(741, 295);
             this.button_Osvezi.Name = "button_Osvezi";
-            this.button_Osvezi.Size = new System.Drawing.Size(144, 50);
+            this.button_Osvezi.Size = new System.Drawing.Size(273, 50);
             this.button_Osvezi.TabIndex = 16;
             this.button_Osvezi.Text = "Osveži";
-            this.button_Osvezi.UseVisualStyleBackColor = true;
+            this.button_Osvezi.UseVisualStyleBackColor = false;
             this.button_Osvezi.Click += new System.EventHandler(this.button_Osvezi_Click);
             // 
             // pictureBoxNaziv
             // 
             this.pictureBoxNaziv.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNaziv.Image")));
-            this.pictureBoxNaziv.Location = new System.Drawing.Point(329, 286);
+            this.pictureBoxNaziv.Location = new System.Drawing.Point(384, 286);
             this.pictureBoxNaziv.Name = "pictureBoxNaziv";
             this.pictureBoxNaziv.Size = new System.Drawing.Size(37, 26);
             this.pictureBoxNaziv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +240,7 @@ namespace PresentationLayer
             // pictureBoxMarka
             // 
             this.pictureBoxMarka.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMarka.Image")));
-            this.pictureBoxMarka.Location = new System.Drawing.Point(329, 323);
+            this.pictureBoxMarka.Location = new System.Drawing.Point(384, 322);
             this.pictureBoxMarka.Name = "pictureBoxMarka";
             this.pictureBoxMarka.Size = new System.Drawing.Size(37, 26);
             this.pictureBoxMarka.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -224,7 +250,7 @@ namespace PresentationLayer
             // pictureBoxCena
             // 
             this.pictureBoxCena.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCena.Image")));
-            this.pictureBoxCena.Location = new System.Drawing.Point(329, 359);
+            this.pictureBoxCena.Location = new System.Drawing.Point(384, 359);
             this.pictureBoxCena.Name = "pictureBoxCena";
             this.pictureBoxCena.Size = new System.Drawing.Size(37, 26);
             this.pictureBoxCena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -234,18 +260,30 @@ namespace PresentationLayer
             // pictureBoxGarancija
             // 
             this.pictureBoxGarancija.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxGarancija.Image")));
-            this.pictureBoxGarancija.Location = new System.Drawing.Point(329, 395);
+            this.pictureBoxGarancija.Location = new System.Drawing.Point(384, 393);
             this.pictureBoxGarancija.Name = "pictureBoxGarancija";
             this.pictureBoxGarancija.Size = new System.Drawing.Size(37, 26);
             this.pictureBoxGarancija.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGarancija.TabIndex = 20;
             this.pictureBoxGarancija.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(741, 359);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormaProdavac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 542);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1049, 542);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxGarancija);
             this.Controls.Add(this.pictureBoxCena);
             this.Controls.Add(this.pictureBoxMarka);
@@ -275,6 +313,7 @@ namespace PresentationLayer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMarka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGarancija)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,6 +340,7 @@ namespace PresentationLayer
         private System.Windows.Forms.PictureBox pictureBoxMarka;
         private System.Windows.Forms.PictureBox pictureBoxCena;
         private System.Windows.Forms.PictureBox pictureBoxGarancija;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
