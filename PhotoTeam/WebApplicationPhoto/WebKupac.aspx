@@ -27,11 +27,11 @@
                     <asp:ListBox ID="ListBox_Korpa" runat="server" Height="124px" Width="295px"></asp:ListBox>
                     <asp:Button ID="Button_Ocisti" runat="server" Text="Očisti korpu" OnClick="Button_Ocisti_Click" style="margin-left:10px;" />
                     <br /><br /><br />
-                    <asp:Label ID="Label3" runat="server" Text="Ime" style="color:white"></asp:Label>          <asp:TextBox ID="TextBox_Ime" runat="server" style="margin-left:53px"></asp:TextBox>   <br />   <br />  
-                    <asp:Label ID="Label4" runat="server" Text="Prezime" style="color:white"></asp:Label>      <asp:TextBox ID="TextBox_Prezime" runat="server" style="margin-left:24px"></asp:TextBox>  <br />   <br />  
-                    <asp:Label ID="Label5" runat="server" Text="Email" style="color:white"></asp:Label>        <asp:TextBox ID="TextBox_Email" runat="server" style="margin-left:41px"></asp:TextBox><br />   <br />  
-                    <asp:Label ID="Label6" runat="server" Text="Adresa" style="color:white"></asp:Label>       <asp:TextBox ID="TextBox_Adresa" runat="server" style="margin-left:31px"></asp:TextBox><br />   <br />  
-                    <asp:Label ID="Label7" runat="server" Text="Broj telefona" style="color:white"></asp:Label><asp:TextBox ID="TextBox_BrTelefona" runat="server" style="margin-left:3px"></asp:TextBox><br />  <br />   
+                    <asp:Label ID="Label3" runat="server" Text="Ime" style="color:white"></asp:Label>          <asp:TextBox ID="TextBox_Ime" runat="server" style="margin-left:53px" ToolTip="Ime mora početi sa velikim slovom"></asp:TextBox>   <br />   <br />  
+                    <asp:Label ID="Label4" runat="server" Text="Prezime" style="color:white"></asp:Label>      <asp:TextBox ID="TextBox_Prezime" runat="server" style="margin-left:24px" ToolTip="Prezime mora početi sa velikim slovom"></asp:TextBox>  <br />   <br />  
+                    <asp:Label ID="Label5" runat="server" Text="Email" style="color:white"></asp:Label>        <asp:TextBox ID="TextBox_Email" runat="server" style="margin-left:41px" ToolTip="Email mora sadržati znak @"></asp:TextBox><br />   <br />  
+                    <asp:Label ID="Label6" runat="server" Text="Adresa" style="color:white"></asp:Label>       <asp:TextBox ID="TextBox_Adresa" runat="server" style="margin-left:31px" ToolTip="Adresa mora sadržati razmak i broj"></asp:TextBox><br />   <br />  
+                    <asp:Label ID="Label7" runat="server" Text="Broj telefona" style="color:white"></asp:Label><asp:TextBox ID="TextBox_BrTelefona" runat="server" style="margin-left:3px" ToolTip="npr. 065/123-4567"></asp:TextBox><br />  <br />   
                      <br />
                  
                     <asp:Button ID="Button_Poruci" runat="server" Text="Poruči" style="width:150px;margin-left:60px" OnClick="Button_Poruci_Click"/>
