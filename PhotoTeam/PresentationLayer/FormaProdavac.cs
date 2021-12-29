@@ -27,13 +27,22 @@ namespace PresentationLayer
         private void FormaProdavac_Load(object sender, EventArgs e)
         {
             RefreshData();
+            ToolTip toolTip = new ToolTip();
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 500;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+
+            toolTip.SetToolTip(this.pictureBoxNaziv, "Naziv mora imati tačno jednu ili dve reči");
+            toolTip.SetToolTip(this.pictureBoxMarka, "Marka mora imati početno slovo malo ili veliko ostala mala ili velika i može sadržati razmak i cifre");
+            toolTip.SetToolTip(this.pictureBoxCena, "Cena može biti decimalan ili ceo broj");
+            toolTip.SetToolTip(this.pictureBoxGarancija, "Garancija mora biti ceo broj");
         }
 
         private void RefreshData()
         {
             List<Proizvod> listaProizvoda = this.proizvodBusiness.GetAllProducts();
             dataGridView_Proizvod.DataSource = listaProizvoda;
-          
         }
 
         private void button_Dodaj_Click(object sender, EventArgs e)

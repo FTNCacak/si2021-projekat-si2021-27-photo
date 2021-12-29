@@ -29,6 +29,7 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaProdavac));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,8 +46,16 @@ namespace PresentationLayer
             this.dataGridView_PoruceniProizvodi = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.button_Osvezi = new System.Windows.Forms.Button();
+            this.pictureBoxNaziv = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMarka = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCena = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGarancija = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Proizvod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PoruceniProizvodi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaziv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMarka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCena)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGarancija)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -192,11 +201,55 @@ namespace PresentationLayer
             this.button_Osvezi.UseVisualStyleBackColor = true;
             this.button_Osvezi.Click += new System.EventHandler(this.button_Osvezi_Click);
             // 
+            // pictureBoxNaziv
+            // 
+            this.pictureBoxNaziv.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNaziv.Image")));
+            this.pictureBoxNaziv.Location = new System.Drawing.Point(329, 286);
+            this.pictureBoxNaziv.Name = "pictureBoxNaziv";
+            this.pictureBoxNaziv.Size = new System.Drawing.Size(37, 26);
+            this.pictureBoxNaziv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNaziv.TabIndex = 17;
+            this.pictureBoxNaziv.TabStop = false;
+            // 
+            // pictureBoxMarka
+            // 
+            this.pictureBoxMarka.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMarka.Image")));
+            this.pictureBoxMarka.Location = new System.Drawing.Point(329, 323);
+            this.pictureBoxMarka.Name = "pictureBoxMarka";
+            this.pictureBoxMarka.Size = new System.Drawing.Size(37, 26);
+            this.pictureBoxMarka.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMarka.TabIndex = 18;
+            this.pictureBoxMarka.TabStop = false;
+            // 
+            // pictureBoxCena
+            // 
+            this.pictureBoxCena.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCena.Image")));
+            this.pictureBoxCena.Location = new System.Drawing.Point(329, 359);
+            this.pictureBoxCena.Name = "pictureBoxCena";
+            this.pictureBoxCena.Size = new System.Drawing.Size(37, 26);
+            this.pictureBoxCena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCena.TabIndex = 19;
+            this.pictureBoxCena.TabStop = false;
+            // 
+            // pictureBoxGarancija
+            // 
+            this.pictureBoxGarancija.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxGarancija.Image")));
+            this.pictureBoxGarancija.Location = new System.Drawing.Point(329, 395);
+            this.pictureBoxGarancija.Name = "pictureBoxGarancija";
+            this.pictureBoxGarancija.Size = new System.Drawing.Size(37, 26);
+            this.pictureBoxGarancija.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxGarancija.TabIndex = 20;
+            this.pictureBoxGarancija.TabStop = false;
+            // 
             // FormaProdavac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 542);
+            this.Controls.Add(this.pictureBoxGarancija);
+            this.Controls.Add(this.pictureBoxCena);
+            this.Controls.Add(this.pictureBoxMarka);
+            this.Controls.Add(this.pictureBoxNaziv);
             this.Controls.Add(this.button_Osvezi);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView_PoruceniProizvodi);
@@ -218,6 +271,10 @@ namespace PresentationLayer
             this.Load += new System.EventHandler(this.FormaProdavac_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Proizvod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_PoruceniProizvodi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaziv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMarka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCena)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGarancija)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,6 +297,10 @@ namespace PresentationLayer
         private System.Windows.Forms.DataGridView dataGridView_PoruceniProizvodi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button_Osvezi;
+        private System.Windows.Forms.PictureBox pictureBoxNaziv;
+        private System.Windows.Forms.PictureBox pictureBoxMarka;
+        private System.Windows.Forms.PictureBox pictureBoxCena;
+        private System.Windows.Forms.PictureBox pictureBoxGarancija;
     }
 }
 
