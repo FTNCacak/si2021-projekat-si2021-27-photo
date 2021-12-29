@@ -10,9 +10,9 @@ CREATE TABLE [dbo].[KUPCI] (
 
 
 CREATE TABLE [dbo].[PORUCIVANJA] (
-    [id_porucivanja]    INT           IDENTITY (1, 1) NOT NULL,
-    [naziv_proizvoda]   NVARCHAR (50) NOT NULL,
-    [datum_porucivanja] NVARCHAR (50) NOT NULL,
+    [id_porucivanja]  INT           IDENTITY (1, 1) NOT NULL,
+    [naziv_proizvoda] NVARCHAR (50) NOT NULL,
+    [sifraP]          INT           NOT NULL,
     PRIMARY KEY CLUSTERED ([id_porucivanja] ASC)
 );
 
@@ -33,3 +33,17 @@ CREATE TABLE [dbo].[ZAPOSLENI] (
     [password]      NVARCHAR (50) NOT NULL,
     PRIMARY KEY CLUSTERED ([id_zaposlenog] ASC)
 );
+
+
+
+SET IDENTITY_INSERT [dbo].[ZAPOSLENI] ON
+INSERT INTO [dbo].[ZAPOSLENI] ([id_zaposlenog], [ime], [prezime], [username], [password]) VALUES (1, N'Marko', N'Markovic', N'admin', N'admin')
+INSERT INTO [dbo].[ZAPOSLENI] ([id_zaposlenog], [ime], [prezime], [username], [password]) VALUES (2, N'Nikola', N'Nikolic', N'user', N'user')
+SET IDENTITY_INSERT [dbo].[ZAPOSLENI] OFF
+
+
+SET IDENTITY_INSERT [dbo].[PROIZVODI] ON
+INSERT INTO [dbo].[PROIZVODI] ([sifra_proizvoda], [naziv], [marka], [cena], [garancija]) VALUES (2, N'Foto Aparat', N'Canon', CAST(700.00 AS Decimal(18, 2)), 3)
+INSERT INTO [dbo].[PROIZVODI] ([sifra_proizvoda], [naziv], [marka], [cena], [garancija]) VALUES (3, N'Objektiv', N'Sigma', CAST(500.00 AS Decimal(18, 2)), 2)
+INSERT INTO [dbo].[PROIZVODI] ([sifra_proizvoda], [naziv], [marka], [cena], [garancija]) VALUES (4, N'Blic', N'Godox', CAST(250.00 AS Decimal(18, 2)), 2)
+SET IDENTITY_INSERT [dbo].[PROIZVODI] OFF
