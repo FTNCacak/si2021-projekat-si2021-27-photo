@@ -44,8 +44,10 @@ namespace PresentationLayer
 
             if (tacno == false)
             {
-                MessageBox.Show("Niste ispravno uneli podatke!");
+                MessageBox.Show("Niste ispravno uneli podatke!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+
+            
         }
 
         private void button_Kupac_Click(object sender, EventArgs e)
